@@ -1,0 +1,48 @@
+/* Navigation styles for character selector */
+.character-buttons {
+  display: flex;
+  justify-content: center; /* center the nav */
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* allow buttons to wrap on narrow screens instead of stretching */
+  margin: 15px 0;
+}
+
+/* Make anchors and buttons share the same box model to avoid shifting */
+.character-buttons a,
+.character-buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px; /* smaller min-width so nav doesn't stretch too wide on small screens */
+  max-width: 160px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 120ms ease;
+  border: none; /* ensure buttons and anchors line up */
+}
+
+.character-buttons a:hover,
+.character-buttons button:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+/* Active state: subtle elevation without changing palette colors */
+.character-buttons a.active,
+.character-buttons a[aria-current="page"],
+.character-buttons button.active {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Ensure mode buttons don't shift layout when a border is applied */
+.mode-buttons button {
+  box-sizing: border-box;
+  min-height: 42px;
+}

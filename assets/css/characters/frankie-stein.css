@@ -1,0 +1,160 @@
+/* ===========================
+   General Layout
+=========================== */
+body {
+  font-family: 'Monsterrat', monospace;
+  background-color: #d9e2e5; /* light grayish blue */
+  color: #393d3e; /* dark gray */
+  margin: 3px;
+  padding: 0;
+  text-align: center;
+}
+
+/* ===========================
+   Login Button
+=========================== */
+.login-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-btn button {
+  background: #000000; /* dark gray */
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-btn button:hover {
+  background: #95979c; /* silver gray */
+}
+
+/* ===========================
+   Logo
+=========================== */
+.logo img {
+  display: block;
+  margin: 50px auto 20px;
+  max-width: 200px;
+}
+
+/* ===========================
+   Character Selection
+=========================== */
+.character-buttons {
+  margin: 15px 0;
+}
+
+.character-buttons button,
+.character-buttons a {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Assign Frankie palette colors */
+.character-buttons button:nth-child(1), .character-buttons a:nth-child(1) { background-color: #bee112; color: #000; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Frankie Stein */
+.character-buttons button:nth-child(1):hover, .character-buttons a:nth-child(1):hover {background: #ecff8d;}
+.character-buttons button:nth-child(2), .character-buttons a:nth-child(2) { background-color: #60277a; color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Claudeed Wolf */
+.character-buttons button:nth-child(2):hover, .character-buttons a:nth-child(2):hover {background: #a95ecb;}
+.character-buttons button:nth-child(3), .character-buttons a:nth-child(3) { background-color: #777979; color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Draculaura */
+.character-buttons button:nth-child(3):hover, .character-buttons a:nth-child(3):hover {background: #c3c2c4;}
+.character-buttons button:nth-child(4), .character-buttons a:nth-child(4) { background-color: #00c6f5; color: #000; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Lagoona Blue */
+.character-buttons button:nth-child(4):hover, .character-buttons a:nth-child(4):hover {background: #9bebff;}
+.character-buttons button:nth-child(5), .character-buttons a:nth-child(5) { background-color: #777979; color: #000; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Cleo De Nile */
+.character-buttons button:nth-child(5):hover, .character-buttons a:nth-child(5):hover {background: #c3c2c4;}
+
+
+/* =========================== Mode Selection =========================== */
+.mode-buttons {
+  margin: 20px 0;
+}
+
+.mode-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #b1cd2e; /* Default neon green */
+  color: #000;
+}
+
+.mode-buttons button:nth-child(1) { background: #bee112; color: #000; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* POMODORO */
+.mode-buttons button:nth-child(2) { background: #00c6f5; color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Short Break */
+.mode-buttons button:nth-child(3) { background: #000; color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;} /* Long Break */
+
+.mode-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Active mode */
+.mode-buttons .active {
+  border: 2px solid #000;
+
+}
+
+/* ==========================
+   Character Image
+=========================== */
+.character-img img {
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* ===========================
+   Timer
+=========================== */
+.timer {
+  margin: 20px 0;
+}
+
+.time-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+  font-family: 'Courier New', monospace;
+  color: #393d3e;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.controls img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #393d3e;
+  padding: 3px;
+}
+
+footer a {
+  color: #393d3e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
