@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const map = {
         'frankie-stein.html': 'FrankieStein',
         'claudeen-wolf.html': 'ClaudeenWolf',
+        'index.html': 'Draculaura',
         'draculaura.html': 'Draculaura',
         'lagoona-blue.html': 'LagoonaBlue',
         'cleo-de-nile.html': 'CleoDeNile'
